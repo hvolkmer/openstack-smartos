@@ -36,7 +36,7 @@
 
         <exec_method type="method" name="start" exec="/openstack/nova/bin/nova-api --config-file=/openstack/cfg/nova.conf" timeout_seconds="60">
 
-              <method_context working_directory='/nova/'>
+              <method_context working_directory='/openstack/log/'>
                 <method_environment>
                   <envvar name="PATH" value="/usr/bin:/usr/sbin:/smartdc/bin:/opt/local/bin:/opt/local/sbin"/>
                </method_environment>
@@ -84,7 +84,7 @@
 
         <exec_method type="method" name="start" exec="/openstack/nova/bin/nova-scheduler -v -d --config-file=/openstack/cfg/nova.conf" timeout_seconds="60">
 
-              <method_context working_directory='/nova/'>
+              <method_context working_directory='/openstack/log/'>
                 <method_environment>
                   <envvar name="PATH" value="/usr/bin:/usr/sbin:/smartdc/bin:/opt/local/bin:/opt/local/sbin"/>
                 </method_environment>
@@ -131,7 +131,7 @@
 
         <exec_method type="method" name="start" exec="/openstack/nova/bin/nova-network --config-file=/openstack/cfg/nova.conf" timeout_seconds="60">
 
-              <method_context working_directory='/nova/'>
+              <method_context working_directory='/openstack/log/'>
                               <method_environment>
                                                 <envvar name="PATH" value="/usr/bin:/usr/sbin:/smartdc/bin:/opt/local/bin:/opt/local/sbin"/>
                                                                 </method_environment>
