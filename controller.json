@@ -1,0 +1,16 @@
+
+  {
+        "brand": "joyent",
+        "hostname": "nova-controller",
+        "dataset_uuid": "f9e4be48-9466-11e1-bc41-9f993f5dff36",
+        "max_physical_memory": 1024,
+        "alias": "nova-ctrl",
+        "nics": [
+          {
+            "nic_tag": "admin",
+  	         "ip": "192.168.83.100",
+  	           "netmask": "255.255.255.0",
+  	           "gateway": "192.168.83.2"
+        	}
+        ]
+      }
