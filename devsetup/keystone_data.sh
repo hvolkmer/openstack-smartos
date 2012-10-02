@@ -123,9 +123,9 @@ if [[ "$ENABLED_SERVICES" =~ "n-cpu" ]]; then
         keystone endpoint-create \
             --region RegionOne \
             --service_id $NOVA_SERVICE \
-            --publicurl "http://$SERVICE_HOST:\$(compute_port)s/v2/\$(tenant_id)s" \
-            --adminurl "http://$SERVICE_HOST:\$(compute_port)s/v2/\$(tenant_id)s" \
-            --internalurl "http://$SERVICE_HOST:\$(compute_port)s/v2/\$(tenant_id)s"
+            --publicurl "http://$SERVICE_HOST:8774/v2/\$(tenant_id)s" \
+            --adminurl "http://$SERVICE_HOST:8774/v2/\$(tenant_id)s" \
+            --internalurl "http://$SERVICE_HOST:8774/v2/\$(tenant_id)s"
     fi
     # Nova needs ResellerAdmin role to download images when accessing
     # swift through the s3 api. The admin role in swift allows a user

@@ -41,7 +41,7 @@
         <template>
             <common_name>
                 <loctext xml:lang="C">
-                    Openstack Keystone
+                    Openstack Glance API
                 </loctext>
             </common_name>
         </template>
@@ -89,7 +89,7 @@
         <template>
             <common_name>
                 <loctext xml:lang="C">
-                    Openstack Keystone
+                    Openstack Glance Registry
                 </loctext>
             </common_name>
         </template>

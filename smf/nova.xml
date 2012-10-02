@@ -14,12 +14,13 @@
             <service_fmri value="svc:/system/filesystem/local"/>
         </dependency>
 
+        <!--
 				<dependency name="keystone" grouping="require_all" restart_on="error" type="service">
 				<service_fmri value="svc:/application/openstack/keystone:default"/>
 				</dependency>
-
+-->
 				<dependency name="glance" grouping="require_all" restart_on="error" type="service">
-				<service_fmri value="svc:/application/openstack/glance:default"/>
+				<service_fmri value="svc:/application/openstack/glance-api:default"/>
 
 				</dependency>
 
@@ -57,7 +58,7 @@
         <template>
             <common_name>
                 <loctext xml:lang="C">
-                    Openstack Keystone
+                    Openstack nova api
                 </loctext>
             </common_name>
         </template>
@@ -105,7 +106,7 @@
         <template>
             <common_name>
                 <loctext xml:lang="C">
-                    Openstack Keystone
+                    Openstack Nova scheduler
                 </loctext>
             </common_name>
         </template>
